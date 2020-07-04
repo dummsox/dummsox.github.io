@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+        <title>D3SOX</title>
+        <meta content='width=device-width, initial-scale=1' name='viewport'>
+
+        <!-- Styles -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+        <link href='main.css' media='screen' rel='stylesheet' type='text/css'>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+        <script defer src='main.js'></script>
+    </head>
+
+    <body>
+
+        <audio id="audio" loop muted>
+            <source src="assets/beat.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <h1 class="title">D3SOX</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card-grid">
+                    <div class="card nord-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-chart-line"></i></i> <span class="white-text">Active projects</span></h2>
+                                <dl class="row">
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                            href="http://d3s0x.github.io/Soundux" target="_blank">dummdux</a></dt>
+                                    <dd class="col-sm-6">A universal dummboard in cute for linux using pulseaudio modules
+                                    </dd>
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                            href="http://d3s0x.github.io/arch-installation" target="_blank">dumm-installation</a>
+                                    </dt>
+                                    <dd class="col-sm-6">My installation instructions for dumm linux</dd>
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                        href="https://github.com/Cardsity" target="_blank">Dummsity</a>
+                                    </dt>
+                                    <dd class="col-sm-6">A Cards Against Humanity clone</dd>
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                            href="https://aur.archlinux.org/packages/?SeB=m&K=D3SOX" target="_blank">Arch Packages</a>
+                                    </dt>
+                                    <dd class="col-sm-6">I don't maintain some packages on the AUR</dd>
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                            href="http://d3s0x.github.io/awesome-software" target="_blank">dumme-software</a>
+                                    </dt>
+                                    <dd class="col-sm-6">Some software i do not recommend for desktop and mobile</dd>
+                                </dl>
+                        </div>
+                    </div>
+                    <div class="card nord-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-level-down-alt"></i></i> <span class="white-text">Inactive projects</span></h2>
+                                <dl class="row">
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                            href="https://github.com/D3S0X/EasyMapReset" target="_blank">EasyMapReset</a>
+                                    </dt>
+                                    <dd class="col-sm-6">A map reset plugin for autism based minecraft servers</dd>
+                                    <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                            href="https://github.com/D3S0X/SteamAllActions"
+                                            target="_blank">SteamAllActions</a></dt>
+                                    <dd class="col-sm-6">Do some things for all elements for your uplay account</dd>
+                                </dl>
+                        </div>
+                    </div>
+                    <div class="card nord-card span-col-2">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><i class="fas fa-person-booth"></i> <span class="white-text">About me</span>
+                            </h5>
+                            <ul class="text-center white-text list-unstyled">
+                                <li>I am Dummsox</li>
+                                <li>I am 21 years old</li>
+                                <li>I code with Ruby, C#, PHP, HTML, Snekky, Python</li>
+                                <li>I'm on Discord: <span class="copy" data-clipboard-text="nico.#9196" title="Click to copy">nico.#9196</span></li>
+                                <li>I'm on Twitter: <a href="https://twitter.com/dumms0x" target="_blank">dumms0x</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-top">
+        <span class="sound-toggle" id="sound-on" style="display: none;">
+            <i class="fas fa-volume-up"></i> Sound on
+        </span>
+            <span class="sound-toggle" id="sound-off">
+            <i class="fas fa-volume-mute"></i> Sound off
+        </span>
+        </div>
+
+    </body>
+
+</html>
